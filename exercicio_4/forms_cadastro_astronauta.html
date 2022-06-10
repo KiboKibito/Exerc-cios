@@ -4,64 +4,67 @@
     <title>Cadastro da liga dos astronautas</title>
   </head>
   <body>
-    <h3>Cadastro da liga dos astronautas</h3>
-    <form action="https://www.google.com/search">
-      <label for="">Nome:</label>
-      <input type="text" id="q" name="q" />
+    <h2>Cadastro da liga dos astronautas</h2>
+    <form action="">
+      <div>
+        <label for="name">Nome:</label>
+        <input type="text" id="name" name="name" required />
+      </div>
       <br />
+      <div>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required />
+        <label for="pwd">- Password</label>
+        <input type="password" id="pwd" name="pwd" required />
+      </div>
       <br />
-      <label for="g">Email:</label>
-      <input type="email" id="g" name="g" />
-      <label for="pwd">- Password: </label>
-      <input type="password" id="pwd" name="pwd" />
+      <div>
+        <label for="date">Data de nascimento:</label>
+        <input type="date" id="date" name="date" required />
+        <label for="photo">- Foto:</label>
+        <input type="file" id="photo" name="photo" />
+      </div>
       <br />
+      <div>
+        <label for="nationality">Nacionalidade:</label>
+        <select name="nationality" id="nationality">
+          <option value="brazilian">brasileiro</option>
+          <option value="american">americano</option>
+          <option value="russian">russo</option>
+        </select>
+        - Gênero:
+        <label for="female">F</label>
+        <input type="radio" id="F" />
+        <label for="male">M</label>
+        <input type="radio" id="F" />
+      </div>
       <br />
-      <label for="d">Data de nascimento:</label>
-      <input type="date" id="d" name="d" />
-      <label for="file">- Foto:</label>
-      <input type="file" id="file" name="file" />
+      <div>
+        Suas principais qualidades:
+        <br />
+        <label for="int">Inteligência</label>
+        <input type="checkbox" id="int" name="int" /> |
+        <label for="res">Resiliência</label>
+        <input type="checkbox" id="res" name="res" /> |
+        <label for="prep">Preparo físico</label>
+        <input type="checkbox" id="prep" name="prep" /> |
+        <label for="edu">Educação</label>
+        <input type="checkbox" id="edu" name="edu" />
+      </div>
       <br />
+      <div>
+        <textarea
+          name="reason"
+          id="reason"
+          cols="55"
+          rows="10"
+          placeholder="Por que você gostaria de se tornar um astronauta?"
+          required
+          minlength="20"
+        ></textarea>
+      </div>
       <br />
-      <label for="ncd">Nacionalidade:</label>
-      <input list="nacionalidade" id="ncd" name="ncd" />
-      <datalist id="nacionalidade">
-        <option value="brasileiro"></option>
-        <option value="russo"></option>
-        <option value="americano"></option>
-      </datalist>
-      - Gênero
-      <label for="fmn">F</label>
-      <input type="radio" id="fmn" name="fmn" value="F" />
-      <label for="mcln">M</label>
-      <input type="radio" id="mcln" name="fmn" value="M" />
-      <br />
-      <br />
-      Suas principais qualidades:
-      <br />
-      <label for="int">Inteligência</label>
-      <input type="checkbox" id="int" name="int" value="int" />
-      <strong> | </strong>
-      <label for="res">Resiliência</label>
-      <input type="checkbox" id="res" name="res" value="res" />
-      <strong> | </strong>
-      <label for="prep">Preparo Físico</label>
-      <input type="checkbox" id="prep" name="prep" value="prep" />
-      <strong> | </strong>
-      <label for="ed">Educação</label>
-      <input type="checkbox" id="ed" name="ed" value="ed" />
-      <strong> | </strong>
-      <br />
-      <br />
-      <textarea
-        name="pergunta"
-        id="pergunta"
-        cols="30"
-        rows="10"
-        placeholder="Por que você gostaria de ser um astronauta?"
-      ></textarea>
-      <br />
-      <br />
-      <input type="submit" value="Criar" />
+      <input type="submit" value="Enviar" />
     </form>
   </body>
 </html>
