@@ -1,0 +1,28 @@
+body {
+  margin: 0px;
+}
+
+h1 {
+  font-family: "montserrat";
+}
+
+.date {
+  color: #0981d1;
+  font-family: "roboto";
+  margin-top: 0px;
+  padding-top: 5px;
+}
+
+.post-content {
+  font-family: "open sans";
+}
+
+.general {
+  background-color: #e1c4ae;
+  width: 70%;
+  margin: 0px auto 0px auto;
+  padding-top: 15px;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-bottom: 15px;
+}
